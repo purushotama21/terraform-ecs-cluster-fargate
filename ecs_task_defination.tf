@@ -8,7 +8,7 @@ resource "aws_ecs_task_definition" "hello_world" {
   container_definitions = <<DEFINITION
 [
   {
-    "image": "nginx:latest",
+    "image": "purushotama/nginx",
     "cpu": 1024,
     "memory": 2048,
     "name": "hello-world-app",
